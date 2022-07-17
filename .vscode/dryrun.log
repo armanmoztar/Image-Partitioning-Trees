@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/armanmoztarzadeh/Downloads/Image-Partitioning-Trees'
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs221util/PNG.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs221util/HSLAPixel.cpp
+ 
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic cs221util/lodepng/lodepng.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic hue_utils.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic testPTree.cpp
+clang++ -stdlib=libc++ -std=c++1y -c -g -O0 -Wall -Wextra -pedantic -Wfloat-conversion ptree.cpp
+clang++ PNG.o HSLAPixel.o lodepng.o hue_utils.o testPTree.o ptree.o -stdlib=libc++ -std=c++1y -lc++abi -lpthread -lm -o testPTree
+make: Leaving directory `/Users/armanmoztarzadeh/Downloads/Image-Partitioning-Trees'
+ 
